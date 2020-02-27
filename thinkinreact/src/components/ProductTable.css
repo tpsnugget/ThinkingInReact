@@ -1,5 +1,13 @@
 .ProductTable-main-container {
-   width: 90%;
+   width: 80%;
    margin: 1rem auto;
    border: 1px solid green;
+}
+
+.ProductTable-header{
+   display: flex;
+}
+
+.ProductTable-div {
+   width: 50%;
 }

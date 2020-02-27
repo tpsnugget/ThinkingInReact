@@ -3,10 +3,13 @@ import "./ProductCategoryRow.css"
 
 class ProductCategoryRow extends Component{
 
-   render(){
+   render(props){
+
+      const { category } = this.props
+
       return(
          <div className="PCR-main-container">
-            <h4>ProductCategoryRow is up Man!</h4>
+            <h4>{category}</h4>
          </div>
       )
    }

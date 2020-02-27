@@ -3,10 +3,13 @@ import "./ProductCategoryRow.css"
 
 class ProductCategoryRow extends Component{
 
-   render(){
+   render(props){
+
+      const { itemName, price, stocked } = this.props
+
       return(
          <div className="PR-main-container">
-            <h4>ProductRow is up Man!</h4>
+            <h4 style={{color: (stocked ? "inherit" : "red")}}>{itemName}{"  "}{price}</h4>
          </div>
       )
    }
